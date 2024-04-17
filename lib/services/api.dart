@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-import 'toast.dart';
+import '../widgets/toast.dart';
 
 class HttpServices {
   String baseUrl = "https://hp-api.onrender.com";

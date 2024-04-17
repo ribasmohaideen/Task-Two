@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
+import '../utils/colors.dart';
 
 void showToast(String msg) {
   Fluttertoast.showToast(
@@ -7,6 +8,6 @@ void showToast(String msg) {
       toastLength: Toast.LENGTH_LONG,
       gravity: ToastGravity.BOTTOM,
       timeInSecForIosWeb: 1,
-      backgroundColor: Colors.red[200],
-      textColor: Colors.white10);
+      backgroundColor: ColorTheme.backgroundColor,
+      textColor: ColorTheme.textColor);
 }

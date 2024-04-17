@@ -1,5 +1,7 @@
-import 'package:assesment_second/common_widget.dart';
+import 'package:assesment_second/widgets/common_widget.dart';
 import 'package:flutter/material.dart';
+
+import '../utils/strings.dart';
 
 class CharacterDetail extends StatelessWidget {
   final Map characterDetails;
@@ -32,12 +34,12 @@ class CharacterDetail extends StatelessWidget {
                           characterDetails["pictureData"],
                           fit: BoxFit.contain,
                         )),
-              textFieldWithLabel(
-                  "Name ", "${characterDetails["characterName"] ?? "-"}"),
-              textFieldWithLabel(
-                  "Actor Name ", "${characterDetails["actorName"] ?? "-"}"),
-              textFieldWithLabel(
-                  "House Name ", "${characterDetails["houseName"] ?? "-"}"),
+              textFieldWithLabel(Strings.labelName,
+                  "${characterDetails["characterName"] ?? "-"}"),
+              textFieldWithLabel(Strings.labelActor,
+                  "${characterDetails["actorName"] ?? "-"}"),
+              textFieldWithLabel(Strings.labelHouse,
+                  "${characterDetails["houseName"] ?? "-"}"),
             ],
           ),
         ),
